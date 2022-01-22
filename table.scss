@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 
+.container {
+  max-width: 1930px;
+  margin: auto;
+}
+
 table {
   font-family: "Fjalla One", sans-serif;
-  width: 100%;
   color: rgb(0, 0, 0);
+  width: 100%;
 }
 
 .overskrift {
@@ -48,13 +53,13 @@ tr:nth-child(9) {
 
 td {
   padding: 0.5em 1.5em;
-  font-size: 40px;
+  font-size: 60px;
   border: solid black 1px;
   text-align: center;
 }
 
 .weekdays {
   td {
-    font-size: 50px;
+    font-size: 60px;
   }
 }
