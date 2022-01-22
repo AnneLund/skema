@@ -11,8 +11,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
-  margin: auto;
+  max-width: 1000px;
 }
 
 table {
@@ -22,7 +21,7 @@ table {
 
 .overskrift {
   td:nth-child(3) {
-    font-size: 60px;
+    font-size: 40px;
   }
 }
 
@@ -62,13 +61,13 @@ tr:nth-child(9) {
 
 td {
   padding: 0.5em 1.5em;
-  font-size: 60px;
+  font-size: 33px;
   border: solid black 1px;
   text-align: center;
 }
 
 .weekdays {
   td {
-    font-size: 60px;
+    font-size: 30px;
   }
 }
