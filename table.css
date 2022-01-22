@@ -15,6 +15,59 @@ table {
   color: black;
 }
 
+.clock svg {
+  width: 40px;
+  height: 60px;
+}
+
+#arrowone {
+  -webkit-animation: turn 4s linear infinite;
+          animation: turn 4s linear infinite;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes turn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes turn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#arrowtwo {
+  -webkit-animation: turntwo 35s linear infinite;
+          animation: turntwo 35s linear infinite;
+  transform-origin: top left center;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes turntwo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes turntwo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .overskrift td:nth-child(3) {
   font-size: 40px;
 }

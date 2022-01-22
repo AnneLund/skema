@@ -16,6 +16,45 @@ table {
   color: rgb(0, 0, 0);
 }
 
+.clock {
+  svg {
+    width: 40px;
+    height: 60px;
+  }
+}
+
+#arrowone {
+  animation: turn 4s linear infinite;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+@keyframes turn {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#arrowtwo {
+  animation: turntwo 35s linear infinite;
+  transform-origin: top left center;
+  transform-box: fill-box;
+}
+
+@keyframes turntwo {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .overskrift {
   td:nth-child(3) {
     font-size: 40px;
