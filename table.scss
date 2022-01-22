@@ -6,6 +6,15 @@
   box-sizing: border-box;
 }
 
+body {
+  max-width: 1500px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
 table {
   font-family: "Fjalla One", sans-serif;
   color: rgb(0, 0, 0);
