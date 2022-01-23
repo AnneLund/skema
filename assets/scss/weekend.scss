@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1920px;
+  margin: auto;
+}
+
+table {
+  font-family: "Fjalla One", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+td {
+  padding: 0.5em 1.5em;
+  font-size: 33px;
+  border: solid black 1px;
+  text-align: center;
+}
+
+#clock {
+  svg {
+    width: 40px;
+    height: 60px;
+  }
+}
+
+#span,
+#date {
+  font-size: 20px;
+  background-color: rgba(0, 0, 128, 0.322);
+}
+
+.element {
+  position: relative;
+}
+#ball {
+  background-color: olivedrab;
+  padding: 15px;
+  position: absolute;
+  top: 2px;
+
+  img {
+    width: 30px;
+  }
+}

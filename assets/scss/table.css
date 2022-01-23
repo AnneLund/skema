@@ -15,9 +15,13 @@ table {
   color: black;
 }
 
-.clock svg {
+#clock svg {
   width: 40px;
   height: 60px;
+}
+
+#liveclock {
+  font-size: 15px;
 }
 
 #arrowone {
@@ -68,6 +72,10 @@ table {
     transform: rotate(360deg);
   }
 }
+#date {
+  font-size: 15px;
+}
+
 .overskrift td:nth-child(3) {
   font-size: 40px;
 }
@@ -84,7 +92,7 @@ tr:nth-child(9) span {
 }
 
 .all {
-  background-color: rgba(199, 37, 37, 0.363);
+  background-color: rgba(199, 37, 37, 0.103);
 }
 
 .mikkel {
@@ -112,4 +120,97 @@ td {
 
 .weekdays td {
   font-size: 30px;
+}
+
+.weekendskema a {
+  font-size: 15px;
+  color: orange;
+}
+.weekendskema a:hover {
+  transition: 500ms ease-in-out;
+  color: red;
+}
+
+#star {
+  -webkit-animation: turnstar 6s linear infinite;
+          animation: turnstar 6s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes turnstar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes turnstar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* The actual popup */
+/* Popup arrow */
+/* Toggle this class - hide and show the popup */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=table.css.map */
