@@ -55,3 +55,11 @@ let schoolgym = document.getElementById("schoolgymdiv");
 schoolgym.addEventListener("mouseover", function () {
   document.getElementById("schoolgym").classList.toggle("show");
 });
+
+//BIBLIOTEKS-EVENT
+
+let library = document.getElementById("librarydiv");
+
+library.addEventListener("mouseover", function () {
+  document.getElementById("library").classList.toggle("show");
+});
