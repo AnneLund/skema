@@ -33,6 +33,17 @@ header {
   }
 }
 
+#clock {
+  svg {
+    width: 40px;
+    height: 60px;
+  }
+}
+
+#liveclock {
+  font-size: 30px;
+}
+
 #div-1 {
   width: 100px;
   height: 300px;
