@@ -24,6 +24,9 @@
 // }
 
 // setInterval(time, 1000);
+
+let vacuum = document.getElementById("vacuum");
+
 function allowDrop(ev) {
   ev.preventDefault();
 }

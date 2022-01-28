@@ -26,13 +26,11 @@ table {
 .datetime div p {
   text-align: center;
 }
-.datetime .radio {
-  display: absolute;
-  top: 40px;
-  font-size: 20px;
-}
-.datetime .radio img {
+.datetime img {
   width: 50px;
+}
+.datetime img:hover {
+  cursor: pointer;
 }
 
 .clock {

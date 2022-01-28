@@ -17,9 +17,13 @@
       <!-- HEADER -->
 
       <header class="datetime">
-        <a class="radio" href="https://www.dr.dk/lyd/p3" target="_blank">
-          <img src="./assets/img/radio.png" />
-        </a>
+        <audio
+          id="audio"
+          src="http://live-icy.gss.dr.dk:8000/A/A05H.mp3"
+        ></audio>
+
+        <img onclick="start()" src="./assets/img/radio.png" />
+
         <div>
           <p>Uge 4</p>
           <p id="date"></p>

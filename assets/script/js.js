@@ -87,3 +87,8 @@ let library = document.getElementById("librarydiv");
 library.addEventListener("mouseover", function () {
   document.getElementById("library").classList.toggle("show");
 });
+
+let audio = document.getElementById("audio");
+function start() {
+  audio.play();
+}
