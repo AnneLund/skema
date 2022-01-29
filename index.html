@@ -17,15 +17,22 @@
       <!-- HEADER -->
 
       <header class="datetime">
+        <!-- RADIO -->
         <audio
           id="audio"
           src="http://live-icy.gss.dr.dk:8000/A/A05H.mp3"
         ></audio>
 
-        <img onclick="start()" src="./assets/img/radio.png" />
+        <img id="radio-button" src="./assets/img/radio.png" />
 
+        <label id="switch">
+          <input id="checkbox" type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+
+        <!-- UGE -->
         <div>
-          <p>Uge 4</p>
+          <p>Uge 5</p>
           <p id="date"></p>
         </div>
 
@@ -80,7 +87,7 @@
 
         <tr>
           <!-- MANDAG -->
-          <td class="valdemar">Fridag</td>
+          <td class="valdemar">Maddag</td>
 
           <!-- TIRSDAG -->
           <td class="rebecca">
@@ -118,7 +125,7 @@
 
         <tr>
           <!-- MANDAG -->
-          <td class="valdemar"></td>
+          <td class="#"></td>
           <!-- TIRSDAG -->
           <td class="bye"></td>
 
@@ -135,9 +142,9 @@
         <!-- ROW NUMBER THREE -->
         <tr>
           <td rowspan="3">07:00-16:00</td>
-          <td class="mikkel">
+          <td class="#">
             <div class="popup" id="pcr">
-              PCR-test
+              <!-- PCR-test -->
               <span class="popuptext" id="myPopup">Klokken 11</span>
             </div>
           </td>
@@ -151,7 +158,7 @@
 
         <!-- ROW NUMBER FOUR -->
         <tr>
-          <td class="valdemar"></td>
+          <td class="#"></td>
           <td class="#"></td>
           <td class="work"></td>
           <td class="work"></td>

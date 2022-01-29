@@ -91,6 +91,14 @@ library.addEventListener("mouseover", function () {
 //RADIO
 
 let audio = document.getElementById("audio");
-function start() {
+
+let button = document.getElementById("checkbox");
+button.addEventListener("click", function () {
   audio.play();
+});
+
+function pauseAudio() {
+  if (button.checked) {
+    audio.pause();
+  }
 }
