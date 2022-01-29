@@ -6,19 +6,32 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: url(/assets/img/background.jpeg);
+  background-color: rgba(0, 0, 0, 0.692);
+  background-blend-mode: darken;
+  background-repeat: none;
+  background-size: cover;
+  font-family: "Fjalla One", sans-serif;
+  color: white;
+}
+
 .container {
   max-width: 1920px;
   margin: auto;
 }
 
 table {
-  font-family: "Fjalla One", sans-serif;
-  color: rgb(0, 0, 0);
+  backdrop-filter: blur(1px);
 }
 
 .datetime {
+  display: flex;
+  justify-content: space-between;
   position: relative;
   margin: 20px;
+  backdrop-filter: blur(1px);
+  padding: 10px;
 
   div {
     text-align: center;
@@ -30,7 +43,8 @@ table {
   }
 
   img {
-    width: 50px;
+    width: 5%;
+    height: 5%;
 
     &:hover {
       cursor: pointer;
@@ -41,12 +55,12 @@ table {
 .clock {
   width: 150px;
   height: 150px;
-  border: 7px solid #282828;
+  border: 7px solid #797979;
   box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5),
-    inset 4px 4px 10px rgba(0, 0, 0, 0.5),
-    inset -4px -4px 10px rgba(67, 67, 67, 0.5), 4px 4px 10px rgba(0, 0, 0, 0.3);
+    inset 4px 4px 10px rgba(114, 114, 114, 0.5),
+    inset -4px -4px 10px rgba(148, 148, 148, 0.5),
+    4px 4px 10px rgba(119, 119, 119, 0.3);
   border-radius: 50%;
-  margin: 10px 0;
   position: relative;
   padding: 5px;
 }
@@ -56,7 +70,7 @@ table {
   width: 100%;
   height: 100%;
   border-radius: 100%;
-  background: #282828;
+  background: #979797;
   overflow: hidden;
 }
 
@@ -113,7 +127,7 @@ table {
   left: 10%;
   width: 80%;
   height: 80%;
-  background: #282828;
+  background: #b8b8b8;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
@@ -138,7 +152,7 @@ table {
   width: 50%;
   right: 50%;
   height: 6px;
-  background: #61afff;
+  background: #04182c;
   position: absolute;
   top: 50%;
   border-radius: 6px;
@@ -159,14 +173,18 @@ table {
 }
 
 .hand.second-hand {
-  background: #ee791a;
+  background: #ff810c;
   width: 45%;
   height: 2px;
 }
 
 #liveclock {
+  position: absolute;
+  right: 170px;
+  top: 50px;
   font-size: 30px;
   padding: 10px;
+  margin: 10px;
 }
 
 .overskrift {
@@ -208,7 +226,7 @@ tr:nth-child(9) {
 td {
   padding: 0.5em 1.5em;
   font-size: 33px;
-  border: solid black 1px;
+  border: solid rgb(255, 255, 255) 1px;
   text-align: center;
 }
 
@@ -221,7 +239,7 @@ td {
 .weekendskema {
   a {
     font-size: 20px;
-    color: rgb(60, 122, 31);
+    color: rgb(186, 241, 160);
 
     &:hover {
       transition: 500ms ease-in-out;
