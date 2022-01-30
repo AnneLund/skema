@@ -56,10 +56,9 @@ const minsHand = document.querySelector(".min-hand");
 const hourHand = document.querySelector(".hour-hand");
 
 //BESKED PÅ BESTEMT TIDSPUNKT
-// day = 1;
-// if (1 < 0) {
-//   document.getElementById("important").innerHTML =
-//     "HUSK: Alt udetøj med i skole/børnehave.";
+
+// if ((d = [0])) {
+//   alert("hello");
 // }
 
 let hilsen = document.getElementById("goodday");
