@@ -16,7 +16,7 @@
     <div class="container">
       <!-- HEADER -->
 
-      <header class="datetime">
+      <header>
         <!-- RADIO -->
         <audio
           id="audio"
@@ -25,16 +25,100 @@
 
         <img id="radio-button" src="./assets/img/radio.png" />
 
-        <label id="switch">
+        <!-- KNAP -->
+        <label class="switch">
           <input id="checkbox" type="checkbox" />
           <span class="slider round"></span>
         </label>
 
+        <!-- HILSEN -->
+
+        <div id="hilsen">
+          <p id="goodday"></p>
+          <p id="important"></p>
+        </div>
+
         <!-- UGE -->
         <div>
-          <p>Uge 5</p>
+          <p id="weekday"></p>
           <p id="date"></p>
+          <p id="weeknumber"></p>
         </div>
+
+        <!-- //GODMORGEN -->
+        <svg
+          id="layer_sun"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 349.75 350.83"
+        >
+          <defs></defs>
+          <g id="sun">
+            <ellipse
+              id="sun-ellipse"
+              class="cls-1"
+              cx="174.96"
+              cy="175.19"
+              rx="59"
+              ry="59.1"
+            />
+            <g id="middle-top">
+              <path
+                class="cls-2"
+                d="M179.8,105.1c-10-19-5-40,3-59,6-13,3-28-3-40"
+                transform="translate(-4.94 -5.21)"
+              />
+            </g>
+            <g id="right-top">
+              <path
+                class="cls-2"
+                d="M238.8,133.1c3-10,10-18,19-25,10-7,21-8,32-14,10-6,18-16,23-27"
+                transform="translate(-4.94 -5.21)"
+              />
+            </g>
+            <g id="right">
+              <path
+                class="cls-2"
+                d="M353.8,180.1c-12,6-27,9-40,4-8-3-15-7-24-9a67,67,0,0,0-20,0c-4,1-7,2-11,3-2,0-3,1-5,2"
+                transform="translate(-4.94 -5.21)"
+              />
+            </g>
+            <g id="middle-bottom">
+              <path
+                class="cls-2"
+                d="M179.8,355.1c-10-19-5-40,3-59,6-13,3-28-3-41"
+                transform="translate(-4.94 -5.21)"
+              />
+            </g>
+            <g id="right-bottom">
+              <path
+                class="cls-2"
+                d="M298.8,317.1a52,52,0,0,1-24-20c-6-11-7-22-12-33-6-11-15-19-26-25"
+                transform="translate(-4.94 -5.21)"
+              />
+            </g>
+            <g id="left-bottom">
+              <path
+                class="cls-2"
+                d="M47.8,303.1c8-17,23-29,42-35,15-4,27-16,32-31"
+                transform="translate(-4.94 -5.21)"
+              />
+            </g>
+            <g id="left-top">
+              <path
+                class="cls-2"
+                d="M124.8,124.1c-19-9-29-29-35-49-4-13-15-24-28-29"
+                transform="translate(-4.94 -5.21)"
+              />
+            </g>
+            <g id="left">
+              <path
+                class="cls-2"
+                d="M5.8,180.1c19-9,40-5,59,3,13,6,28,3,41-3"
+                transform="translate(-4.94 -5.21)"
+              />
+            </g>
+          </g>
+        </svg>
 
         <!-- LIVECLOCK -->
 
@@ -64,11 +148,11 @@
 
         <tr class="weekdays">
           <td></td>
-          <td>Mandag</td>
-          <td>Tirsdag</td>
-          <td>Onsdag</td>
-          <td>Torsdag</td>
-          <td>
+          <td id="monday">Mandag</td>
+          <td id="tuesday">Tirsdag</td>
+          <td id="wednesday">Onsdag</td>
+          <td id="thursday">Torsdag</td>
+          <td id="friday">
             Fredag
             <div class="weekendskema">
               <a href="./assets/sites/weekend.html">Gå til weekend-skema</a>
@@ -76,7 +160,7 @@
           </td>
         </tr>
         <tr>
-          <!-- ROW NUMBER ONE -->
+          <!-- 05:30-06:30 -->
           <td rowspan="2">05:30-06:30</td>
           <td class="all" colspan="5" rowspan="1">
             Påklædning , tandbørstning og morgenmad
@@ -112,7 +196,7 @@
           </td>
         </tr>
 
-        <!-- ROW NUMBER TWO -->
+        <!-- 6:00-7:00 -->
         <tr>
           <td rowspan="2">06:00-07:00</td>
 
@@ -139,15 +223,10 @@
           <td class="#"></td>
         </tr>
 
-        <!-- ROW NUMBER THREE -->
+        <!-- 7:00-16:00 -->
         <tr>
           <td rowspan="3">07:00-16:00</td>
-          <td class="#">
-            <div class="popup" id="pcr">
-              <!-- PCR-test -->
-              <span class="popuptext" id="myPopup">Klokken 11</span>
-            </div>
-          </td>
+          <td class="#"></td>
           <td class="all" colspan="4" rowspan="1">
             Børnehave/skole/arbejde
             <i class="fas fa-school" style="color: rgba(255, 0, 0, 0.5)"></i>
@@ -156,17 +235,22 @@
 
         <tr></tr>
 
-        <!-- ROW NUMBER FOUR -->
         <tr>
+          <!-- MANDAG -->
           <td class="#"></td>
+          <!-- TIRSDAG -->
           <td class="#"></td>
+          <!-- ONSDAG -->
           <td class="work"></td>
+          <!-- TORSDAG -->
           <td class="work"></td>
+          <!-- FREDAG -->
           <td class="work"></td>
         </tr>
-        <!-- ROW NUMBER FIVE -->
+        <!-- 16:00-17:00 -->
 
         <tr>
+          <!-- ALLE DAGE -->
           <td rowspan="2">16:00-17:00</td>
           <td class="all" colspan="5" rowspan="1">
             Fri leg <i class="fas fa-tree" style="color: green"></i>
@@ -175,16 +259,22 @@
         </tr>
 
         <tr>
+          <!-- MANDAG -->
           <td class="#"></td>
+          <!-- TIRSDAG -->
           <td class="playtime"></td>
+          <!-- ONSDAG -->
           <td class="playtime"></td>
+          <!-- TORSDAG -->
           <td class="playtime"></td>
+          <!-- FREDAG -->
           <td class="playtime"></td>
         </tr>
 
-        <!-- ROW NUMBER SIX -->
+        <!-- 17-17:30-->
         <tr>
           <td rowspan="2">17:00-17:30</td>
+          <!-- ALLE DAGE -->
           <td class="all" colspan="4" rowspan="1">
             Fælles madlavning og borddækning
             <i class="fas fa-utensils" style="color: silver"></i>
@@ -200,8 +290,8 @@
         </tr>
 
         <tr>
-          <td></td>
-          <td class="mikkel" colspan="1" rowspan="1">
+          <!-- MANDAG -->
+          <td class="mikkel">
             <div class="popup" id="soccer">
               <p>
                 Fodbold
@@ -210,7 +300,11 @@
               <span class="popuptext" id="fodbold"> Kl. 17</span>
             </div>
           </td>
+          <!-- TIRSDAG -->
+          <td></td>
+          <!-- ONSDAG -->
           <td class="dinnermaking"></td>
+          <!-- TORSDAG -->
           <td class="mikkel" colspan="1" rowspan="1">
             <p>
               Fodbold<i class="fas fa-futbol" style="color: rgb(0, 0, 0)"></i>
@@ -219,15 +313,17 @@
         </tr>
 
         <!-- 
-ROW NUMBER SEVEN -->
+17:30-18:00 -->
         <tr>
           <td rowspan="2">17:30-18:00</td>
+          <!-- MANDAG -->
           <td class="rebecca">
             <div class="popup" id="gym">
               <p>Gymnastik <i class="fas fa-child"></i></p>
               <span class="popuptext" id="gymnastik"> Kl. 17:30</span>
             </div>
           </td>
+          <!-- TIRSDAG, ONSDAG, TORSDAG -->
           <td class="all" colspan="3" rowspan="1">
             <p>
               Aftensmad og oprydning
@@ -239,16 +335,20 @@ ROW NUMBER SEVEN -->
             </p>
           </td>
         </tr>
-
+        <!-- ALLE DAGE -->
         <tr>
+          <!-- MANDAG -->
           <td class="rebecca"></td>
-          <td class="mikkel"></td>
+          <!-- TIRSDAG -->
+          <td></td>
+          <!-- ONSDAG -->
           <td class="dinner"></td>
-          <td class="mikkel"></td>
+          <!-- TORSDAG -->
+          <td></td>
         </tr>
 
-        <!-- ROW NUMBER EIGHT -->
-
+        <!-- 18:00-18:15 -->
+        <!-- ALLE DAGE -->
         <tr>
           <td rowspan="2" colspan="1">18:00-18:15</td>
           <td class="all" colspan="4">
@@ -258,14 +358,18 @@ ROW NUMBER SEVEN -->
         </tr>
 
         <tr>
+          <!-- MANDAG -->
           <td class="rebecca"></td>
-          <td class="mikkel"></td>
+          <!-- TIRSDAG -->
+          <td></td>
+          <!-- ONSDAG -->
           <td class="teeth"></td>
-          <td class="mikkel"></td>
+          <!-- TORSDAG -->
+          <td></td>
         </tr>
 
-        <!-- ROW NUMBER NINE -->
-
+        <!-- 18:15-19:00 -->
+        <!-- ALLE DAGE -->
         <tr>
           <td rowspan="2">18:15-19:00</td>
           <td class="all" colspan="4" rowspan="1">
@@ -275,17 +379,21 @@ ROW NUMBER SEVEN -->
         </tr>
 
         <tr>
-          <td class="hw"></td>
+          <!-- MANDAG -->
           <td class="mikkel"></td>
+          <!-- TIRSDAG -->
+          <td></td>
+          <!-- ONSDAG -->
           <td class="all" colspan="1" rowspan="1">
             Fælles weekendplanlægning
             <i class="fas fa-calendar-check" style="color: cadetblue"></i>
           </td>
+          <!-- TORSDAG -->
           <td class="mikkel"></td>
         </tr>
 
-        <!-- ROW NUMBER TEN -->
-
+        <!-- KL. 19 -->
+        <!-- ALLE DAGE -->
         <tr>
           <td rowspan="2">19:00</td>
           <td class="all" colspan="4" rowspan="1">
@@ -438,9 +546,13 @@ ROW NUMBER SEVEN -->
         </tr>
 
         <tr>
-          <td class="goodnight"></td>
+          <!-- MANDAG -->
           <td class="mikkel"></td>
+          <!-- TIRSDAG -->
+          <td></td>
+          <!-- ONSDAG -->
           <td class="goodnight"></td>
+          <!-- TORSDAG -->
           <td class="mikkel"></td>
         </tr>
       </table>

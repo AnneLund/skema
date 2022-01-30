@@ -26,15 +26,15 @@ table {
 }
 
 /* The switch - the box around the slider */
-#switch {
-  position: relative;
+.switch {
+  position: absolute;
+  left: 150px;
+  top: 40px;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 53px;
+  height: 28px;
 }
-
-/* Hide default HTML checkbox */
-#switch input {
+.switch input {
   opacity: 0;
   width: 0;
   height: 0;
@@ -51,12 +51,11 @@ table {
   background-color: #ccc;
   transition: 0.4s;
 }
-
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
+  height: 20px;
+  width: 20px;
   left: 4px;
   bottom: 4px;
   background-color: white;
@@ -83,7 +82,7 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.datetime {
+header {
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -92,19 +91,234 @@ input:checked + .slider:before {
           backdrop-filter: blur(1px);
   padding: 10px;
 }
-.datetime div {
+header div {
   text-align: center;
-  font-size: 40px;
+  font-size: 35px;
 }
-.datetime div p {
+header div p {
   text-align: center;
 }
-.datetime img {
+header img {
   width: 5%;
   height: 5%;
 }
-.datetime img:hover {
-  cursor: pointer;
+
+#hilsen {
+  color: #ffff90;
+  position: absolute;
+  left: 350px;
+  top: 60px;
+}
+#hilsen #important {
+  font-size: 20px;
+}
+
+#layer_sun {
+  visibility: hidden;
+  width: 10%;
+  position: absolute;
+  right: 500px;
+  top: 0;
+  overflow: visible;
+}
+#layer_sun .cls-1 {
+  fill: #ffee35c7;
+}
+#layer_sun .cls-2 {
+  fill: none;
+  stroke: #ffee0080;
+  stroke-miterlimit: 10;
+  stroke-width: 4px;
+}
+#layer_sun #right {
+  -webkit-animation: sunny 2s ease-in-out infinite alternate;
+          animation: sunny 2s ease-in-out infinite alternate;
+  transform-origin: left;
+  transform-box: fill-box;
+}
+@-webkit-keyframes sunny {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+@keyframes sunny {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+#layer_sun #right-top {
+  -webkit-animation: sunny5 2s ease-in-out infinite alternate;
+          animation: sunny5 2s ease-in-out infinite alternate;
+  -webkit-animation-delay: 50ms;
+          animation-delay: 50ms;
+  transform-origin: left bottom;
+  transform-box: fill-box;
+}
+@-webkit-keyframes sunny5 {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+@keyframes sunny5 {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+#layer_sun #left {
+  -webkit-animation: sunny4 2.5s ease-in-out infinite alternate;
+          animation: sunny4 2.5s ease-in-out infinite alternate;
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+  transform-origin: right;
+  transform-box: fill-box;
+}
+@-webkit-keyframes sunny4 {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+@keyframes sunny4 {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+#layer_sun #left-top {
+  -webkit-animation: sunny8 2.5s ease-in-out infinite alternate;
+          animation: sunny8 2.5s ease-in-out infinite alternate;
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
+  transform-origin: right bottom;
+  transform-box: fill-box;
+}
+@-webkit-keyframes sunny8 {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+@keyframes sunny8 {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+#layer_sun #middle-top {
+  -webkit-animation: sunny2 3s ease-in-out infinite alternate;
+          animation: sunny2 3s ease-in-out infinite alternate;
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+@-webkit-keyframes sunny2 {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+@keyframes sunny2 {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+#layer_sun #middle-bottom {
+  -webkit-animation: sunny3 3s ease-in-out infinite alternate;
+          animation: sunny3 3s ease-in-out infinite alternate;
+  -webkit-animation-delay: 250ms;
+          animation-delay: 250ms;
+  transform-origin: top;
+  transform-box: fill-box;
+}
+@-webkit-keyframes sunny3 {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+@keyframes sunny3 {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+#layer_sun #right-bottom {
+  -webkit-animation: sunny6 3.5s ease-in-out infinite alternate;
+          animation: sunny6 3.5s ease-in-out infinite alternate;
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+  transform-origin: left top;
+  transform-box: fill-box;
+}
+@-webkit-keyframes sunny6 {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+@keyframes sunny6 {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+#layer_sun #left-bottom {
+  -webkit-animation: sunny7 3.5s ease-in-out infinite alternate;
+          animation: sunny7 3.5s ease-in-out infinite alternate;
+  -webkit-animation-delay: 350ms;
+          animation-delay: 350ms;
+  transform-origin: right top;
+  transform-box: fill-box;
+}
+@-webkit-keyframes sunny7 {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+@keyframes sunny7 {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(2);
+  }
 }
 
 .clock {

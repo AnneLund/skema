@@ -9,22 +9,15 @@
     <script src="/assets/script/weekend.js" defer></script>
   </head>
   <body>
-    <table style="background-color: rgba(255, 255, 255, 0.555); width: 100%">
-      <thead>
-        <tr class="overskrift">
-          <td class="anne">Anne</td>
-          <td class="valdemar">Valdemar</td>
-          <td class="all" colspan="2">
-            Weekend
-            <div id="date"></div>
-            <a href="/index.html">Tilbage til ugeskema</a>
-          </td>
-          <td class="rebecca">Rebecca</td>
-          <td class="mikkel">Mikkel</td>
-        </tr>
-      </thead>
-
-      <tbody>
+    <div class="container">
+      <header>
+        <div>
+          <p id="weekday"></p>
+          <p id="date"></p>
+          <p id="weeknumber"></p>
+        </div>
+      </header>
+      <table style="background-color: rgba(255, 255, 255, 0.555); width: 100%">
         <tr>
           <td id="clock">
             <svg
@@ -67,8 +60,8 @@
             </div>
           </td>
           <td></td>
-          <td>Lørdag</td>
-          <td>Søndag</td>
+          <td id="saturday">Lørdag</td>
+          <td id="sunday">Søndag</td>
           <td><a href="./duties.html">Opgaveskema</a></td>
         </tr>
 
@@ -111,7 +104,7 @@
           <td>Data Thirteen</td>
           <td></td>
         </tr>
-      </tbody>
-    </table>
+      </table>
+    </div>
   </body>
 </html>

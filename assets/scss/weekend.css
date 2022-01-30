@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Fjalla One", sans-serif;
+}
+
 .container {
   max-width: 1920px;
   margin: auto;
@@ -19,16 +23,15 @@
 header {
   display: flex;
   justify-content: center;
+  height: 200px;
+  margin: 20px 0 0;
 }
 header div {
-  padding: 15px 50px;
-  height: 500px;
-  font-size: 25px;
-  margin: 0 50px;
+  text-align: center;
+  font-size: 35px;
 }
-header h2 {
-  font-size: 20px;
-  margin-bottom: 20px;
+header div p {
+  text-align: center;
 }
 
 #clock svg {
@@ -71,7 +74,6 @@ a {
 }
 
 table {
-  font-family: "Fjalla One", sans-serif;
   color: black;
 }
 
@@ -82,13 +84,7 @@ td {
   text-align: center;
 }
 
-#clock svg {
-  width: 40px;
-  height: 60px;
-}
-
 #span,
 #date {
-  font-size: 20px;
-  background-color: rgba(0, 0, 128, 0.322);
+  font-size: 30px;
 }/*# sourceMappingURL=weekend.css.map */
