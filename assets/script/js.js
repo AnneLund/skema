@@ -21,13 +21,13 @@ weeknumber.innerHTML = "Uge " + result;
 
 //UGEDAG
 const weekday = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
+  "Søndag",
+  "Mandag",
+  "Tirsdag",
+  "Onsdag",
+  "Torsdag",
+  "Fredag",
+  "Lørdag",
 ];
 
 const d = new Date();
