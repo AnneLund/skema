@@ -57,7 +57,7 @@ const hourHand = document.querySelector(".hour-hand");
 
 //BESKED PÅ BESTEMT TIDSPUNKT
 
-// if ((d = [0])) {
+// if ((day = [2])) {
 //   alert("hello");
 // }
 
